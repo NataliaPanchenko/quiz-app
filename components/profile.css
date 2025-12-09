@@ -11,7 +11,7 @@ section{
     align-items: center;
     margin-bottom: 15px;
     position: relative;
-    gap: 50px;
+    gap: 30px;
 }
 
 .profile__photo {
@@ -83,6 +83,9 @@ section{
     main {
         margin: 0 40px;
     }
+    .profile__account {
+        gap: 50px;
+    }
 }
 
 @media(min-width: 900px) {
@@ -90,6 +93,9 @@ section{
         position: relative;
         justify-content: start;
         gap: 100px;
+    }
+    .profile__account {
+        gap: 200px;
     }
 }
 
