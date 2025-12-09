@@ -88,11 +88,8 @@ section{
 @media(min-width: 900px) {
     .profile__dark-mode{
         position: relative;
-    }
-    .dark-mode__icon {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+        justify-content: start;
+        gap: 100px;
     }
 }
 
