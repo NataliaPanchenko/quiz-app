@@ -2,9 +2,9 @@
     --border-color: #000;
     --nav-height: 50px;
     --tag-color: linear-gradient(120deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 100%);
-    --highlight-color: #E0E0E0;
+    --highlight-color: #e6f1fc;
     --card-color: #fff;
-    --button-color: #2A7B9B;
+    --button-color: #49b08c;
 }
 
 * {

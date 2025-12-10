@@ -5,6 +5,25 @@
     background-color: var(--highlight-color);
     font-weight: 530;
     color: var(--border-color);
+    
+}
+
+.quiz__header--block {
+    margin-top: 5px;
+    background-color: var(--card-color);
+    width: 200px;
+    border-radius: 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 10px;
+    padding-left: 5px;
+}
+
+.quiz__header--img {
+    width: 2rem;
+    height: 2rem;
 }
 
 .header__logo {
