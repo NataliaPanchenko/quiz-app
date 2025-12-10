@@ -79,6 +79,13 @@ section{
     width: 3em;
 }
 
+
+
+a {
+    text-decoration: none;
+    color: var(--border-color);
+}
+
 @media(min-width: 600px) {
     main {
         margin: 0 40px;
