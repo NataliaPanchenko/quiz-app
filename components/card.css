@@ -1,6 +1,6 @@
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     padding: 0;
     margin: 0;
     padding-bottom: var(--nav-height);
@@ -41,8 +41,8 @@
 }
 
 .bookmark__img {
-    width: 1.5em;
-    height: 1.5em;
+    width: 1.8em;
+    height: 1.8em;
 }
 
 .card__answer {
@@ -67,11 +67,12 @@
 .tags {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 5px;
     margin: 10px;
-    align-items: start;
+    justify-content: start;
     flex-wrap: wrap;
-    justify-content: center;
+    align-self: flex-start;
+    margin: 10px;
 }
 
 .tag {
