@@ -1,9 +1,10 @@
 :root {
     --border-color: #000;
     --nav-height: 50px;
-    --tag-color: #fc8549;
+    --tag-color: linear-gradient(120deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 100%);
     --highlight-color: #E0E0E0;
     --card-color: #fff;
+    --button-color: #2A7B9B;
 }
 
 * {

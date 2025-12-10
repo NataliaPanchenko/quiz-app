@@ -60,7 +60,7 @@
 }
 
 .show__answer:hover {
-    background-color: var(--tag-color);
+    background-color: var(--button-color);
 }
 
 .tags {
@@ -77,7 +77,8 @@
 .tag {
     list-style: none;
     cursor: pointer;
-    background-color: var(--tag-color);
+    background: #2A7B9B;
+    background: var(--tag-color);  
     padding: 5px;
     text-align: start;
     font-size: small;
