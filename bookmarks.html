@@ -12,14 +12,16 @@
 <body>
     <header class="header">
         <h1 class="quiz__header">Web Quiz</h1>
-        <div class="border"></div>
+        <div class="header__logo">
+            <img class="profile__photo" alt="Profile photo" src="./assets/penguin.png" />
+        </div>
     </header>
     <main class="cards">
         <article class="card">
             <span class="bookmark__icon">
                 <img src="assets/bookmark.png" alt="Bookmark" class="bookmark__img" />
             </span>
-            <h3 class="card__question">Question 2: <br /> Which HTML tag is used to link an external CSS file to an HTML
+            <h3 class="card__question">QUESTION 2: <br /> Which HTML tag is used to link an external CSS file to an HTML
                 document?</h3>
             <p class="card__answer">
                 <span class="highlight">&lt;link&gt;</span>
@@ -36,7 +38,7 @@
             <span class="bookmark__icon">
                 <img src="assets/bookmark.png" alt="Bookmark" class="bookmark__img" />
             </span>
-            <h3 class="card__question">Question 4: <br /> Which CSS property is used to change the text color of an
+            <h3 class="card__question">QUESTION 4: <br /> Which CSS property is used to change the text color of an
                 element?
             </h3>
             <p class="card__answer"><span class="highlight">color</span></p>
@@ -51,7 +53,7 @@
             <span class="bookmark__icon">
                 <img src="assets/bookmark.png" alt="Bookmark" class="bookmark__img" />
             </span>
-            <h3 class="card__question">Question 10: <br /> What does the term "responsive web design" refer to?</h3>
+            <h3 class="card__question">QUESTION 10: <br /> What does the term "responsive web design" refer to?</h3>
             <p class="card__answer">It refers to designing web pages that adapt and display well on various screen sizes
                 and devices.</p>
             <button class="button show__answer">Show Answer</button>
@@ -66,7 +68,7 @@
 
     <nav class="nav">
         <a href="./index.html" class="nav__area">
-            <button class="button nav__btn nav__btn--active">
+            <button class="button nav__btn ">
                 <img class="nav__icon home" src="./assets/house.svg" alt="Home">
             </button>
         </a>
@@ -75,9 +77,9 @@
                 <img class="nav__icon bookmarks" src="./assets/bookmark-white.png" alt="Bookmarks">
             </button>
         </a>
-        <a href="./profile.html" class="nav__area>
-            <button class=" button nav__btn">
-            <img class="nav__icon profile" src="./assets/account.png" alt="Profile">
+        <a href="./profile.html" class="nav__area">
+            <button class="button nav__btn">
+                <img class="nav__icon profile" src="./assets/account.png" alt="Profile">
             </button>
         </a>
     </nav>

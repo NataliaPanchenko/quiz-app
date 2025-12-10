@@ -1,11 +1,13 @@
 .nav {
     position: fixed;
     width: 100%;
-    height: calc(var(--nav-height) + 5px);
+    height: var(--nav-height);
     bottom: 0;
+    left: 0;
+    right: 0;
     display: flex;
     flex-direction: row;
-    border-top: 1px solid var(--border-color);
+    border-top: 1px solid var(--highlight-color);
     justify-content: space-around;
     align-items: center;
     z-index: 20;
@@ -14,16 +16,25 @@
 
 .nav__here {
     background-color: var(--highlight-color);
+    border-radius: 100%;
+    
 }
 
 .nav__icon {
     width: 30px;
     height: 30px;
     cursor: pointer;
+    transition: 0.2s;
 }
 
-.nav__icon bookmarks:hover {
-    background-image: url("./assets/bookmark-white.png");
+.nav__icon:active {
+    transform: scale(1.1);
 }
+
+
+
+
+
+
 
 

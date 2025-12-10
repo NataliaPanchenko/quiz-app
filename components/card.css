@@ -8,22 +8,26 @@
 
 .card {
     margin: 10px;
-    border: 1px solid var(--border-color);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+    background-color: var(--card-color);
 }
 
 .card__question {
     margin: 15px 10px 0 10px;
     text-align: center;
+    line-height: 1.2rem;
+    font-size: 16px;
 }
 
 .card__answer {
     text-align: center;
+    margin: 10px;
+    visibility: hidden;
 }
 
 .highlight {
@@ -33,21 +37,14 @@
 
 .bookmark__icon {
     position: absolute;
-    width: 20px;
-    height: 20px;
-    top: -10px;
-    right: 20px;
+    top: 5px;
+    right: 10px;
     cursor: pointer;
 }
 
 .bookmark__img {
-    width: 1.8em;
-    height: 1.8em;
-}
-
-.card__answer {
-    margin: 10px;
-    visibility: hidden;
+    width: 1rem;
+    height: 1rem;
 }
 
 .active {
@@ -55,13 +52,15 @@
 }
 
 .show__answer {
-    border: 1px solid var(--border-color);
     margin-bottom: 5px;
     cursor: pointer;
+    transition: 0.3s;
+    background-color: var(--highlight-color);
+    font-weight: 500;
 }
 
 .show__answer:hover {
-    background-color: var(--highlight-color);
+    background-color: var(--tag-color);
 }
 
 .tags {
@@ -80,7 +79,6 @@
     cursor: pointer;
     background-color: var(--tag-color);
     padding: 5px;
-    border: 1px solid var(--border-color);
     text-align: start;
     font-size: small;
     border-radius: 5px;
