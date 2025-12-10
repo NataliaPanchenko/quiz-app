@@ -48,10 +48,11 @@ section{
     gap: 10px;
 }
 
-.profil__score--bookmarks, .profil__score--answers {
+.profil__link--bookmarks, .profil__score--answers {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 .profile__score--icon {
