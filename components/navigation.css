@@ -17,3 +17,7 @@
     height: 30px;
     cursor: pointer;
 }
+
+.nav__icon bookmarks:hover {
+    background-image: url("./assets/bookmark-white.png");
+}
