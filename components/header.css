@@ -5,14 +5,15 @@
     background-color: var(--highlight-color);
     font-weight: 530;
     color: var(--border-color);
-    
+    display: flex;
+    justify-content: center;
 }
 
 .quiz__header--block {
     margin-top: 5px;
     background-color: var(--card-color);
     width: 200px;
-    border-radius: 50px;
+    border-radius: 18px;
     align-items: center;
     display: flex;
     flex-direction: row;
