@@ -30,6 +30,10 @@
     visibility: hidden;
 }
 
+.active {
+    visibility: visible;
+}
+
 .highlight {
     background: var(--highlight-color);
     border-radius: 3px;
@@ -47,15 +51,12 @@
     height: 1rem;
 }
 
-.active {
-    visibility: visible;
-}
-
 .show__answer {
     margin-bottom: 5px;
     cursor: pointer;
     transition: 0.3s;
-    background-color: var(--highlight-color);
+    background-color: var(--border-color);
+    color: var(--card-color);
     font-weight: 500;
 }
 
@@ -63,7 +64,7 @@
     background-color: var(--button-color);
 }
 
-.tags {
+.card__tags {
     display: flex;
     flex-direction: row;
     gap: 5px;
@@ -74,7 +75,7 @@
     margin: 10px;
 }
 
-.tag {
+.card__tag {
     list-style: none;
     cursor: pointer;
     background: #2A7B9B;

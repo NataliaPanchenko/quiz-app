@@ -1,5 +1,7 @@
-document.querySelectorAll(".card").forEach((card) => {
-  card.querySelector(".show__answer").onclick = () => {
-    card.querySelector(".card__answer").classList.toggle("active");
-  };
-});
+(() => {
+  document.querySelectorAll(".card").forEach((card) => {
+    card.querySelector('[data-js="show__answer"]').onclick = () => {
+      card.querySelector('[data-js="card__answer"]').classList.toggle("active");
+    };
+  });
+})();
