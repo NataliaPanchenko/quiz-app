@@ -48,6 +48,7 @@ section{
     display: flex;
     flex-direction: row;
     gap: 10px;
+    transition: border-color 0.3s ease;
 }
 
 .profil__link--bookmarks, .profil__score--answers {
@@ -87,6 +88,8 @@ section{
 .dark-mode--icon {
     height: 3em;
     width: 3em;
+    cursor: pointer;
+    transition: 0.5s ease;
 }
 
 .profile__settings--icon {
