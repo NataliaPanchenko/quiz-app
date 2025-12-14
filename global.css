@@ -22,3 +22,8 @@ body {
     margin: 0;
     background-color: var(--highlight-color);
 }
+
+body.dark-mode {
+    background-color: var(--border-color);
+    color: var(--card-color);
+}

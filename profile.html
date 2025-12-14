@@ -7,6 +7,7 @@
     <title>Web Quiz</title>
     <link rel="icon" href="./assets/landing-page.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <script src="./js/script.js" defer></script>
 </head>
 
 <body>
@@ -33,19 +34,18 @@
         </section>
         <section class="profile__score">
             <div class="profil__score--answers">
-                <img class="profile__score--icon" src="./assets/book-check.svg" alt="points">
+                <img class="profile__score--icon" src="./assets/reward.png" alt="points">
                 <span class="profile__score--text">
                     12
                 </span>
-
-
             </div>
             <div class="profil__score--bookmarks">
                 <a class="profil__link--bookmarks" href="./bookmarks.html">
-                    <img class="profile__score--icon" src="./assets/bookmark.png">
-                    <span class="profile__score--text">4</span>
+                    <img class="profile__score--icon" src="./assets/bookmark.png" alt="bookmarks">
                 </a>
-
+                <span class="profile__score--text">
+                    12
+                </span>
             </div>
         </section>
         <section class="profile__options">
@@ -54,7 +54,7 @@
                 <h2 class="profile__settings--title">Settings</h2>
             </div>
             <div class="profile__dark-mode">
-                <img src="./assets/switch.png" alt="dark mode icon" class="dark-mode--icon" />
+                <img src="./assets/switch-light.png" data-js="dark-mode" alt="dark mode icon" class="dark-mode--icon" />
                 <h2 class="dark-mode__title">Dark mode</h2>
             </div>
         </section>

@@ -11,7 +11,7 @@
     justify-content: space-around;
     align-items: center;
     z-index: 20;
-    background-color: #fff;
+    background-color: var(--card-color);
 }
 
 .nav__btn > img {
