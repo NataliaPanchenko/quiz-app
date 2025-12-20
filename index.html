@@ -7,7 +7,7 @@
     <title>Web Quiz</title>
     <link rel="icon" href="./assets/landing-page.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
-    <script src="./js/script.js" defer></script>
+    <script src="./js/index.js" defer></script>
 </head>
 
 <body>
@@ -23,7 +23,7 @@
     <main class="cards">
         <article class="card">
             <span class="bookmark__icon">
-                <img src="assets/bookmark-white.png" alt="Bookmark" class="bookmark__img" />
+                <img src="assets/bookmark-white.png" alt="Bookmark" class="bookmark__img" data-js="bookmark__img" />
             </span>
             <h3 class="card__question">QUESTION 1: <br /> What does CSS stand for?</h3>
             <p class="card__answer" data-js="card__answer">Cascading Style Sheets</p>
@@ -185,6 +185,11 @@
         <a href="./bookmarks.html" class="nav__area">
             <button class="button nav__btn">
                 <img class="nav__icon__bookmarks" src="./assets/bookmark-white.png" alt="Bookmarks">
+            </button>
+        </a>
+        <a href="./form.html" class="nav__area">
+            <button class="button nav__btn">
+                <img class="nav__icon__form" src="./assets/add.png" alt="Form">
             </button>
         </a>
         <a href="./profile.html" class="nav__area">
