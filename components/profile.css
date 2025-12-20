@@ -58,6 +58,10 @@ section{
     gap: 10px;
 }
 
+.bookmark--active {
+  content: url("../assets/bookmark.png");
+}
+
 .profile__score--icon {
     width: 1em;
     height: 1em;

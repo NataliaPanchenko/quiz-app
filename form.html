@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Quiz</title>
+    <link rel="icon" href="./assets/landing-page.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="./js/form.js" defer></script>
+</head>
+
+<body>
+    <header class="quiz__header">
+        <div class="quiz__header--block">
+            <h1 class="quiz__header--text">Web Quiz</h1>
+            <img src="./assets/landing-page.png" alt="landing page image" class="quiz__header--img">
+        </div>
+        <a class="header__logo" href="./profile.html">
+            <img class="profile__photo" alt="Profile photo" src="./assets/penguin.png" />
+        </a>
+    </header>
+    <main class="main">
+        <h2 class="form__header">Add new question</h2>
+        <form data-js="form" class="form">
+            <label for="form__question">Your question:</label>
+            <input type="text" id="form__question" class="form__question">
+
+            <label for="form__answer">Your answer:</label>
+            <input type="text" id="form__answer" class="form__answer">
+
+            <label for="form__tag">Tag:</label>
+            <input type="text" id="form__tag" class="form__tag">
+
+            <button type="submit" class="submit__button button">Submit</button>
+        </form>
+    </main>
+
+    <nav class="nav" aria-label="menu">
+        <a href="./index.html" class="nav__area">
+            <button class="button nav__btn ">
+                <img class="nav__icon__home" src="./assets/house.svg" alt="Home">
+            </button>
+        </a>
+        <a href="./bookmarks.html" class="nav__area">
+            <button class="button nav__btn">
+                <img class="nav__icon__bookmarks" src="./assets/bookmark-white.png" alt="Bookmarks">
+            </button>
+        </a>
+        <a href="#" class="nav__area">
+            <button class="button nav__btn">
+                <img class="nav__icon__form" src="./assets/add-black.png" alt="Form">
+            </button>
+        </a>
+        <a href="./profile.html" class="nav__area">
+            <button class="button nav__btn">
+                <img class="nav__icon__profile" src="./assets/user.png" alt="Profile">
+            </button>
+        </a>
+    </nav>
+</body>
+
+</html>
