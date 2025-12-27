@@ -58,9 +58,7 @@ section{
     gap: 10px;
 }
 
-.bookmark--active {
-  content: url("../assets/bookmark.png");
-}
+
 
 .profile__score--icon {
     width: 1em;
@@ -90,10 +88,48 @@ section{
 }
 
 .dark-mode--icon {
-    height: 3em;
-    width: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease;
+    margin: 0;
+    padding: 0;
+}
+
+.dark-mode--button {
+    width: 63px;
+    height: 35px;
+    background-color: var(--border-color);
     cursor: pointer;
-    transition: 0.5s ease;
+    border-radius: 50px;
+    position: relative;
+    transition: 0.2s ease;
+}
+
+.dark-mode--button::before {
+    position: absolute;
+    content: '';
+    margin: 3px;
+    background-color: var(--card-color);
+    width: 29px;
+    height: 29px;
+    border-radius: 50px;
+    left: 0;
+    bottom: 0;
+    transition: 0.2s ease;
+}
+
+input:checked + .button {
+    background-color: var(--card-color);
+}
+
+input:checked + .button::before {
+    background-color: var(--border-color);
+    transform: translateX(100%);
+}
+
+input {
+       display: none;
 }
 
 .profile__settings--icon {
