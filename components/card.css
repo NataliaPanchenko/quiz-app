@@ -51,6 +51,10 @@
     height: 1rem;
 }
 
+.bookmark--active {
+  content: url("../assets/bookmark.png");
+}
+
 .show__answer {
     margin-bottom: 5px;
     cursor: pointer;

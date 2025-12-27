@@ -7,17 +7,14 @@ const headerBlock = document.querySelector(".quiz__header--block");
 const scoreAnswers = document.querySelector(".profil__score--answers");
 const scoreBookmarks = document.querySelector(".profil__score--bookmarks");
 
-darkMode.addEventListener("click", () => {
-  darkMode.src = darkMode.src.includes("switch-light")
-    ? "./assets/switch-dark.png"
-    : "./assets/switch-light.png";
+darkMode.addEventListener("change", () => {
   body.classList.toggle("dark-mode");
   header.classList.toggle("dark-mode");
   headerText.classList.toggle("dark-mode");
   headerBlock.classList.toggle("dark-mode");
   scoreAnswers.style.setProperty("border-color", "var(--card-color)");
   scoreBookmarks.style.setProperty("border-color", "var(--card-color)");
-  settingsIcon.src = darkMode.src.includes("switch-light")
-    ? "./assets/setting.png"
-    : "./assets/setting-light.png";
+  settingsIcon.src = body.classList.contains("dark-mode")
+    ? "./assets/setting-light.png"
+    : "./assets/setting.png";
 });
