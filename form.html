@@ -13,8 +13,8 @@
 <body>
     <header class="quiz__header">
         <div class="quiz__header--block">
-            <h1 class="quiz__header--text">Web Quiz</h1>
-            <img src="./assets/landing-page.png" alt="landing page image" class="quiz__header--img">
+            <h1 class="quiz__header--text">Add question</h1>
+            <!-- <img src="./assets/landing-page.png" alt="landing page image" class="quiz__header--img"> -->
         </div>
         <a class="header__logo" href="./profile.html">
             <img class="profile__photo" alt="Profile photo" src="./assets/penguin.png" />
@@ -23,13 +23,21 @@
     <main class="main">
         <h2 class="form__header">Add new question</h2>
         <form data-js="form" class="form">
-            <label for="input__question">Your question:</label>
-            <input id="input__question" type="text" class="input__question" data-js="input__question" />
-            <label for="input__answer">Your answer:</label>
-            <input id="input__answer" type="text" class="input__answer" data-js="input__answer" />
-            <label for="input__tag">Tag:</label>
-            <input id="input__tag" type="text" class="input__tag" data-js="input__tag" />
-
+            <div class="input-wrapper">
+                <label for="input__question">Your question:</label>
+                <input id="input__question" type="text" class="input__question" data-js="input__question"
+                    maxlength="150" />
+                <p class="counter__question" data-js="counter_question">150</p>
+            </div>
+            <div class="input-wrapper">
+                <label for="input__answer">Your answer:</label>
+                <input id="input__answer" type="text" class="input__answer" data-js="input__answer" maxlength="150" />
+                <p class="counter__answer" data-js="counter_answer">150</p>
+            </div>
+            <div class="input-wrapper">
+                <label for="input__tag">Tag:</label>
+                <input id="input__tag" type="text" class="input__tag" data-js="input__tag" />
+            </div>
             <button type="submit" class="submit__button">Submit</button>
         </form>
         <ul class="cards" data-js="cards"></ul>

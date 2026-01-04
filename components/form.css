@@ -1,20 +1,53 @@
+.form__header {
+    text-align: center;
+}
+
 .form {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin: auto;
-    padding: 20px;
+    padding: 10px;
+    align-items: center;
+}
+
+label {
+    color: var(--counter-color);
+    padding: 0;
+    margin: 0;
 }
 
 input {
-    padding: 10px;
-    border: 1px solid var(--border-color);
-    border-radius: 4px;
+    padding: 6px;
+    border: 1px solid var(--counter-color);
+    border-radius: 6px;
     background-color: var(--card-color);
     display: block;
-    width: 300px;
+    width: 400px;
+}
+
+.counter__question, .counter__answer {
+  font-size: 0.8rem;
+  color: var(--counter-color);
+  margin-left: 375px;
+  padding: 0;
 }
 
 .submit__button {
-    width: 50px;
+    width: 400px;
+    padding: 5px;
+    border: none;
+    background-color: var(--button-color);
+    color: var(--card-color);
+    border-radius: 6px;
 }
+
+@media(max-width: 600px) {
+    input, .submit__button {
+        width: 250px;
+    }
+    .counter__question, .counter__answer {
+        margin-left: 225px;
+    }
+}
+
