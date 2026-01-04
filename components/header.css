@@ -21,7 +21,6 @@
 .quiz__header--block {
     margin: 5px;
     background-color: var(--card-color);
-    width: 200px;
     border-radius: 20px;
     align-items: center;
     display: flex;
@@ -32,6 +31,10 @@
 
 .quiz__header--block.dark-mode {
     background-color: var(--border-color);
+}
+
+.quiz__header--text {
+    margin: 0 5px;
 }
 
 .quiz__header--img {
