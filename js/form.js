@@ -5,6 +5,7 @@ const tagInput = document.querySelector('[data-js="input__tag"]');
 const cardsContainer = document.querySelector('[data-js="cards"]');
 const counterQuestion = document.querySelector('[data-js="counter_question"]');
 const counterAnswer = document.querySelector('[data-js="counter_answer"]');
+const counterTag = document.querySelector('[data-js="counter_tag"]');
 let questionNumber = 11;
 
 form.addEventListener("submit", (event) => {
@@ -48,11 +49,16 @@ form.addEventListener("submit", (event) => {
 const updateCounter = (field, counter, maxLength) => {
   const currentLength = field.value.length;
   counter.textContent = maxLength - currentLength;
-  field.addEventListener("input", () => {
-    updateCounter(field, counter, maxLength);
-  });
 };
 
-updateCounter(questionInput, counterQuestion, 150);
+questionInput.addEventListener("input", () => {
+  updateCounter(questionInput, counterQuestion, 150);
+});
 
-updateCounter(answerInput, counterAnswer, 150);
+answerInput.addEventListener("input", () => {
+  updateCounter(answerInput, counterAnswer, 150);
+});
+
+tagInput.addEventListener("input", () => {
+  updateCounter(tagInput, counterTag, 50);
+});

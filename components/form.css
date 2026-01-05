@@ -26,7 +26,7 @@ input {
     width: 400px;
 }
 
-.counter__question, .counter__answer {
+.counter__question, .counter__answer, .counter__tag {
   font-size: 0.8rem;
   color: var(--counter-color);
   margin-left: 375px;
@@ -46,7 +46,7 @@ input {
     input, .submit__button {
         width: 250px;
     }
-    .counter__question, .counter__answer {
+    .counter__question, .counter__answer, .counter__tag {
         margin-left: 225px;
     }
 }

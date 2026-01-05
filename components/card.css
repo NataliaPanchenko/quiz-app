@@ -22,12 +22,16 @@
     text-align: center;
     line-height: 1.2rem;
     font-size: 16px;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .card__answer {
     text-align: center;
     margin: 10px;
     visibility: hidden;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .card__answer--active {
@@ -88,6 +92,8 @@
     text-align: start;
     font-size: small;
     border-radius: 5px;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 
